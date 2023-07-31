@@ -3,6 +3,7 @@
   --fuenteParrafo:"Open Sans", sans-serif;
 
   --primario: #784d3c;
+  --gris: #e1e1e1;
   --blanco: #ffffff;
   --oscuro:#000000;
 }
@@ -130,4 +131,36 @@ img{
     grid-template-columns: 2fr 1fr;
     column-gap: 4rem;
   }
+}
+
+.entry{
+  border: 1px solid var(--gris);
+  margin-bottom: 2rem
+}
+.entry:last-of-type{
+  border: none;
+  margin-bottom: 0;
+}
+.button{
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .button{
+    display: inline-block;
+
+  }
+}
+.button--primary{
+  background-color: var(--oscuro)
+
 }
